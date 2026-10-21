@@ -1,0 +1,71 @@
+{
+  "run_id": "08d69269-dc28-4770-af73-690d676d3470",
+  "topic": "Introduction to RAG",
+  "status": "passed",
+  "lesson": "# Introduction to RAG\n\nHello! Welcome to your very first lesson on **RAG**. If you have finished Class 12 and want to learn about Artificial Intelligence (AI) from scratch, you are in the right place. You do not need any prior knowledge. We will keep things simple, step by step, and easy to understand.\n\n---\n\n## What is RAG?\n\n**RAG** stands for **Retrieval-Augmented Generation**. \n\nLet us break down these big words into simple plain English:\n* **Retrieval:** Finding and fetching useful information from a collection of documents.\n* **Generation:** Creating or writing an answer using AI.\n* **Augmented:** Improved or added to.\n\nPut it all together: **RAG** is a technique where an AI system looks up information from external documents first, and then uses that exact information to write a smart, correct answer.\n\n---\n\n## Why does it matter?\n\nNormal AI models (like ChatGPT) only know what they learned during their training. \n* They can forget new facts.\n* They do not know your personal notes, your company reports, or local Indian college textbooks unless they were in their training data.\n* Sometimes, normal AI models **hallucinate**. This means they make up false facts and sound very confident while doing it.\n\n**RAG** matters because it connects the AI to real documents. Instead of guessing, the AI reads the correct notes first and answers based on them. This makes the answers much more helpful and reliable.\n\n---\n\n## An everyday analogy\n\nImagine you are sitting inside an exam hall. \n* **A normal AI** is like a student who is not allowed to carry any books. They must write the answers purely from memory. If they forget something, they guess.\n* **RAG** is like a student who is allowed to bring an open textbook into the exam. When a question is asked, the student first opens the book, finds the exact page, reads it, and then writes the correct answer. \n\n---\n\n## How does it work?\n\nLet us look at the step-by-step workflow of RAG. \n\n1. **Documents are split into chunks:** \n   * *Technical word:* **Document chunking** means taking a very long book or PDF and cutting it into small, manageable paragraphs or sentences (chunks).\n2. **Chunks are indexed:** \n   * *Technical word:* **Indexing** means organizing these small pieces so the computer can search through them quickly, like an index at the back of a textbook.\n   * *Technical word:* **Embeddings** are created during this process. An embedding is a way to turn words into numbers so a computer understands the meaning behind them.\n   * *Technical word:* **Vector database** is a special digital storage folder designed to hold these numbers and quickly find similar meanings.\n3. **Retrieving relevant chunks:** \n   * When you ask a question, the system searches the vector database and finds the specific chunks that match your question.\n4. **Inserting text into the model prompt:** \n   * *Technical word:* **Prompt** is the message or instruction you give to the AI. The system takes your question *plus* the retrieved text chunks and feeds them together into the AI model.\n5. **Generating a grounded answer:** \n   * *Technical word:* **Grounded answer** means an answer that is strictly based on the retrieved facts rather than wild guessing.\n\n---\n\n## Worked example\n\n**Question:** What is the capital of France according to the travel guide?  \n**Retrieved evidence:** \"Chapter 3: Paris is the capital and most populous city of France.\"  \n**Answer:** According to the travel guide, Paris is the capital of France.\n\n---\n\n## Limitations of RAG\n\nEven though RAG is very powerful, it is important to know its limits:\n* **Does not guarantee correctness:** RAG does not guarantee 100% true answers. If the retrieved documents contain irrelevant, outdated, or malicious information, the system can make mistakes. The AI model can also still hallucinate (make things up).\n* **Not training:** RAG is completely different from training or fine-tuning an AI model. RAG just hands documents to the model as temporary reading material; it does not permanently change or teach the core AI model.\n\n---\n\n## Short recap\n\n* **RAG** stands for Retrieval-Augmented Generation.\n* It fetches facts from external documents and gives them to the AI as context before answering.\n* It helps reduce guessing, but it does **not** guarantee 100% correct answers.\n* It is not the same as training a model.\n\n---\n\n## Check your understanding\n\n1. What does the acronym RAG stand for?  \n   **Answer:** RAG stands for Retrieval-Augmented Generation.\n\n2. Does RAG guarantee that the AI will always give a 100% correct answer?  \n   **Answer:** No, RAG does not guarantee correctness. Errors can still happen if the retrieved documents are wrong or if the model hallucinates.\n\n3. Is RAG the same thing as training or fine-tuning an AI model?  \n   **Answer:** No, RAG is not the same as training or fine-tuning a model.",
+  "history": [
+    {
+      "attempt": 1,
+      "passed": true,
+      "checks": [
+        {
+          "id": "accuracy",
+          "passed": true,
+          "reason": "The lesson correctly states that RAG does not guarantee correctness and that it is not training or fine-tuning, strictly matching the factual baseline."
+        },
+        {
+          "id": "accessibility",
+          "passed": true,
+          "reason": "The tone is welcoming, uses simple plain English definitions, and connects with an everyday exam hall analogy suitable for a Class 12 graduate with zero AI background."
+        },
+        {
+          "id": "example",
+          "passed": true,
+          "reason": "The worked example includes a concrete query ('What is the capital of France according to the travel guide?'), retrieved evidence, and a corresponding answer."
+        },
+        {
+          "id": "jargon",
+          "passed": true,
+          "reason": "Technical terms like 'Document chunking', 'Indexing', 'Embeddings', 'Vector database', 'Prompt', and 'Grounded answer' are explicitly defined in simple terms when first introduced."
+        },
+        {
+          "id": "coverage",
+          "passed": true,
+          "reason": "The lesson covers what RAG is, why it matters, and how it works through a detailed step-by-step workflow."
+        },
+        {
+          "id": "flow",
+          "passed": true,
+          "reason": "The lesson follows a logical pedagogical sequence from introduction and definition to why it matters, an analogy, workflow, worked example, limitations, recap, and knowledge check."
+        },
+        {
+          "id": "standalone",
+          "passed": true,
+          "reason": "The lesson stands completely on its own as an introductory tutorial without requiring external materials or prior lessons."
+        },
+        {
+          "id": "knowledge_check",
+          "passed": true,
+          "reason": "The check your understanding section includes explicit review questions paired with direct answers covering key concepts from the lesson."
+        },
+        {
+          "id": "has_title",
+          "passed": true,
+          "reason": "Markdown title required"
+        },
+        {
+          "id": "has_worked_example",
+          "passed": true,
+          "reason": "Worked example must label Question, Retrieved evidence, and Answer explicitly"
+        },
+        {
+          "id": "has_questions",
+          "passed": true,
+          "reason": "Knowledge check must contain at least 3 numbered questions ending in ? and 3 explicit answers"
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "prior_insights": "accuracy: False claim: RAG guarantees correct answers; system_error: InternalServerError: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]; has_worked_example: Question, retrieved evidence, and answer required; has_questions: At least 3 questions and answers required"
+}

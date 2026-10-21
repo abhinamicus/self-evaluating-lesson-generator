@@ -1,0 +1,139 @@
+{
+  "run_id": "31af4f5a-fecf-4088-9fb3-b61aa257916a",
+  "topic": "Introduction to RAG",
+  "status": "passed",
+  "lesson": "# Introduction to RAG\n\n## What is RAG?\nRAG means Retrieval-Augmented Generation. It helps an AI assistant look up useful information before answering. Think of an open-book exam: you first find the right page, then write an answer using it.\n\n## Why does it matter?\nAn AI assistant may not know your school's latest timetable. RAG lets it read an updated timetable instead of guessing. It can still make mistakes, so check important answers.\n\n## How does it work?\n1. **Collect:** Save trusted documents, such as a school timetable.\n2. **Prepare:** Split long documents into small pieces called chunks.\n3. **Index:** Organize chunks for searching. Some systems use embeddings (number patterns representing meaning) in a vector database (a searchable store of those patterns).\n4. **Retrieve:** When someone asks a question, find the most relevant pieces.\n5. **Generate:** Give those pieces and the question to a language model (AI that writes text). Ask it to answer using the evidence.\n6. **Verify:** Check the answer against the source, and show where it came from.\n\n## Worked example\n**Question:** What time does the library close on Friday?\n**Retrieved timetable text:** 'Friday library hours: 9 AM to 5 PM.'\n**AI answer:** The library closes at 5 PM on Friday, according to the timetable.\n\n## Important limits\nRAG does not train the language model on the documents. It supplies information at answer time. If the documents are wrong, old, or unrelated, the answer can still be wrong. It does not guarantee correct answers.\n\n## Quick recap\nRAG means: find useful information first, then write an answer using it. It is helpful when answers depend on documents or new information.\n\n## Check your understanding\n1. **What does RAG stand for?** Retrieval-Augmented Generation.\n2. **Does RAG guarantee truth?** No. The documents and answer can be wrong.\n3. **What happens before the AI writes an answer?** The system retrieves relevant information.\n",
+  "history": [
+    {
+      "attempt": 1,
+      "passed": false,
+      "checks": [
+        {
+          "id": "accuracy",
+          "passed": false,
+          "reason": "False claim: RAG guarantees correct answers"
+        },
+        {
+          "id": "accessibility",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "example",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "jargon",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "coverage",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "flow",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "standalone",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "knowledge_check",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "has_title",
+          "passed": true,
+          "reason": "Markdown title required"
+        },
+        {
+          "id": "has_worked_example",
+          "passed": true,
+          "reason": "Question, retrieved evidence, and answer required"
+        },
+        {
+          "id": "has_questions",
+          "passed": true,
+          "reason": "At least 3 questions and answers required"
+        }
+      ],
+      "failures": [
+        {
+          "id": "accuracy",
+          "passed": false,
+          "reason": "False claim: RAG guarantees correct answers"
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "passed": true,
+      "checks": [
+        {
+          "id": "accuracy",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "accessibility",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "example",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "jargon",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "coverage",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "flow",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "standalone",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "knowledge_check",
+          "passed": true,
+          "reason": "Fixture-based mock check; not semantic validation"
+        },
+        {
+          "id": "has_title",
+          "passed": true,
+          "reason": "Markdown title required"
+        },
+        {
+          "id": "has_worked_example",
+          "passed": true,
+          "reason": "Question, retrieved evidence, and answer required"
+        },
+        {
+          "id": "has_questions",
+          "passed": true,
+          "reason": "At least 3 questions and answers required"
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "prior_insights": "None"
+}
